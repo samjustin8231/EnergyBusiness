@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Energy Business</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+</head>
+
+<body>
+<!--header S-->
+<div id="header">
+	<div class="top">
+    	<div class="section">
+        	<a id="loginShow">登录</a>
+			|<a id="trialShow">免费试用</a>|
+			<a id="registerShow">注册</a>
+			<span><input type="text" placeholder="搜索" /><em class="ico"></em></span>
+            <!--loginWin S-->
+			<div class="win" id="loginWin">
+				<div class="win-top"></div>
+                <div class="win-mid">
+                	<h5>登录</h5><a class="win-close"></a>
+                    <div class="win-text">
+                    	<div class="tips">用户名有误，请重新输入</div>
+                    	<input type="text" placeholder="用户名" />
+                    </div>
+                    <div class="win-text showTips">
+                    	<div class="tips">密码有误，请重新输入</div>
+                    	<input type="password" placeholder="密码" />
+                    </div>
+                    <p><a>忘记你的密码？</a></p>
+                    <p><button>登录</button></p>
+                </div>
+                <div class="win-bot"></div>
+			</div>
+            <!--loginWin E-->
+            
+            <!--trialWin S-->
+			<div class="win" id="trialWin">
+				<div class="win-top"></div>
+                <div class="win-mid">
+                	<h5>免费试用</h5><a class="win-close"></a>
+                    <h6>创建你的账户</h6>
+                    <div class="win-text">
+                    	<div class="tips">用户名有误，请重新输入</div>
+                    	<input type="text" placeholder="用户名" />
+                    </div>
+                    <div class="win-text showTips">
+                    	<div class="tips">密码有误，请重新输入</div>
+                    	<input type="password" placeholder="密码" />
+                    </div>
+                    <div class="win-text">
+                    	<div class="tips">邮箱地址有误，请重新输入</div>
+                    	<input type="text" placeholder="邮箱地址" />
+                    </div>
+                    <p><button>免费试用</button></p>
+                </div>
+                <div class="win-bot"></div>
+			</div>
+            <!--trialWin E-->
+            
+            <!--registerWin S-->
+			<div class="win" id="registerWin">
+				<div class="win-top"></div>
+                <div class="win-mid">
+                	<h5>注册</h5><a class="win-close"></a>
+                    <h6>创建你的账户</h6>
+                    <div class="win-text">
+                    	<div class="tips">用户名有误，请重新输入</div>
+                    	<input type="text" placeholder="用户名" />
+                    </div>
+                    <div class="win-text">
+                    	<div class="tips">密码有误，请重新输入</div>
+                    	<input type="password" placeholder="密码" />
+                    </div>
+                    <div class="win-text showTips">
+                    	<div class="tips">邮箱地址有误，请重新输入</div>
+                    	<input type="text" placeholder="邮箱地址" />
+                    </div>
+                    <p><button>注册</button></p>
+                </div>
+                <div class="win-bot"></div>
+			</div>
+            <!--registerWin E-->
+        </div>
+    </div>
+    <div class="bot">
+    	<div class="section">
+			<a class="logo"></a>
+			<ul id="mainNav">
+				<li>
+                	<a>产品</a>
+                    <div class="menu product">
+                    	<ul>
+                        	<li>
+                            	<h5>原油</h5>
+                                <h6><a>常规原油</a></h6>
+                                <h6>非常规原油</h6>
+                                <ul><li><a>油砂</a></li><li><a>页岩油</a></li></ul>
+                            </li>
+                            <li class="border">
+                            	<h5>石油产品</h5>
+                                <h6><a>石脑油</a></h6>
+                                <h6>石油燃料</h6>
+                                <ul>
+                                	<li><a>汽油</a></li><li><a>柴油</a></li><li><a>航空煤油</a></li><li><a>醇醚燃料</a></li><li><a>生物柴油</a></li>
+                                </ul>
+                                <h6><a>溶剂油</a></h6>
+                                <h6><a>润滑油</a></h6>
+                                <h6>基础油</h6>
+                                <ul><li><a>白油</a></li><li><a>石蜡</a></li></ul>
+                                <h6><a>沥青</a></h6>
+                            </li>
+                            <li>
+                                <h6><a>石油焦</a></h6>
+                                <h6>燃料油</h6>
+                                <ul>
+                                	<li><a>船用油</a></li><li><a>工业燃料/炼油原料</a></li><li><a>其他燃料油</a></li>
+                                </ul>
+                                <h6>调和油</h6>
+                                <ul><li><a>调和汽油</a></li><li><a>调和柴油</a></li><li><a>调和燃料油</a></li></ul>
+                                <h6><a>液化石油气</a></h6>
+                                <ul><li><a>液化气</a></li><li><a>丙烷</a></li><li><a>丁烷</a></li><li><a>燃气深加工</a></li></ul>
+                            </li>
+                            <li class="border">
+                            	<h5>天然气</h5>
+                                <h6><a>管道天然气</a></h6>
+                                <h6>液化天然气</h6>
+                                <h6>压缩天然气</h6>
+                                <h6>非常规天然气</h6>
+                                <ul><li><a>页岩气</a></li><li><a>煤制气</a></li><li><a>煤层气</a></li><li><a>砂岩气</a></li><li><a>合成天然气</a></li><li><a>沼气</a></li><li><a>可燃冰</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            	<li>
+                	<a>栏目</a>
+                    <div class="menu column">
+                    	<ul>
+                        	<li>
+                            	<h6>统计表格</h6>
+                                <ul><li><a>价格</a></li><li><a>供应</a></li><li><a>需求</a></li></ul>
+                                <h6>分析和报告</h6>
+                                <ul><li><a>每日</a></li><li><a>每周</a></li><li><a>每月</a></li><li><a>每季</a></li><li><a>每年</a></li><li><a>综合</a></li></ul>
+                            </li>
+                            <li>
+                            	<h6>市场动态</h6>
+                                <ul><li><a>利好</a></li><li><a>利空</a></li><li><a>中性</a></li><li><a>价格</a></li><li><a>供应</a></li><li><a>需求</a></li><li><a>基础设施</a></li><li><a>投资活动</a></li><li><a>政策法规</a></li><li><a>市场资料</a></li></ul>
+                            </li>
+                            <li>
+                            	<h6>数据</h6>
+                                <ul><li><a>市场讯息</a></li><li><a>价格</a></li><li><a>供应</a></li><li><a>需求</a></li><li><a>基础设施</a></li><li><a>投资活动</a></li><li><a>政策法规</a></li><li><a>市场资料</a></li></ul>
+                                <h6 class="diy"><a>自选组合</a></h6>
+                            </li>
+                            <li>
+                            	<h6>新闻</h6>
+                                <ul><li><a>市场讯息</a></li><li><a>价格</a></li><li><a>供应</a></li><li><a>需求</a></li><li><a>基础设施</a></li><li><a>投资活动</a></li><li><a>政策法规</a></li><li><a>市场资料</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+				<li>
+                	<a>商机</a>
+                    <div class="menu business">
+                    	<ul>
+                        	<li>
+                            	<h6>行业黄页</h6>
+                                <ul><li><a>产品信息</a></li><li><a>公司名册</a></li></ul>
+                                <h6><a>投资分析</a></h6>
+                            </li>
+                            <li>
+                            	<h6>买卖发布</h6>
+                                <ul><li><a>我是买家</a></li><li><a>我是卖家</a></li><li><a>潜力交易</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+			</ul>
+       </div>
+    </div>
+</div>
+<!--header E-->
+
+<!--content S-->
+<div id="content">
+	<div class="mainPic">
+    	<div class="section">
+        	<em class="arr arrL"></em>
+           <em class="arr arrR"></em>
+       </div>
+    	<ul>
+        	<li>
+           	<img src="images/main_pic1.jpg" width="1920" />
+            	<div class="section">
+                	<div>
+                		<h2>EP油品供应月报</h2>
+              			<p>每月原油和石油产品供应<br />基本面报告</p>
+                  </div>
+              </div>
+           </li>
+       </ul>
+    </div>
+    <div class="main">
+    	<div class="section">
+        	<!--left S-->
+    		<div class="left">
+            	<div class="module">
+            		<div class="title title-h1">市场动态</div>
+                    <div class="box first">
+                    	<div class="title title-h2">原油</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">石油产品</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">天然气</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+                
+                <div class="side-adArea">
+                	<img src="images/side_ad1.png" width="100%" />
+                </div>
+                
+                <div class="module">
+            		<div class="title title-h1">数据</div>
+                    <div class="box">
+                    	<div class="title title-h2">原油</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">石油产品</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">天然气</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+            <!--left E-->
+            
+            <!--right S-->
+       		<div class="right">
+            	<div class="module">
+            		<div class="title title-h1">今日新闻</div>
+                    <div class="box first">
+                    	<div class="title title-h2">原油</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">石油产品</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">天然气</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+                
+                <div class="side-adArea">
+                	<img src="images/side_ad1.png" width="100%" />
+                </div>
+                
+                <div class="module">
+            		<div class="title title-h1">分析和报告</div>
+                    <div class="box">
+                    	<div class="title title-h2">原油</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">石油产品</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">天然气</div>
+                        <ul>
+                        	<li>
+                            	<p>常规原油</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                                <p>非常规原油  油砂</p>
+                                <h6><span>[加工量] 中石化4月加工量上涨...</span><em>14:42</em></h6>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+            <!--right E-->
+            
+            <!--center S-->
+       		<div class="center">
+            	<div class="module tabModule">
+            		<div class="title title-h1">价格介绍</div>
+					<ul class="box-tab">
+                    	<li class="on"><a style="border-right:none;">重要国际价格</a></li>
+						<li><a>重要国内价格</a></li>
+					</ul>
+					<div class="box-cnt">
+						<div class="cntBox" style="display:block;">
+                        	<div class="title title-h2">原油</div>
+                        	<ul>
+                            	<li>
+									<p><span>WTI原油期货价格</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+								<li>
+									<p><span>Brent原油期货价格</span><em>$108.60/bbl</em></p>
+                                    <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+                                <li>
+									<p><span>OPEC一揽子原油现货价格</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+								<li>
+									<p><span>WTI和BRENT价差</span><em>$108.60/bbl</em></p>
+                                    <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+							</ul>
+                            
+                            <div class="title title-h2">天然气</div>
+                        	<ul>
+                            	<li>
+									<p><span>Nymex天然气期货价格</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+								<li>
+									<p><span>ICE天然气期货价格</span><em>$108.60/bbl</em></p>
+                                    <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+                                <li>
+									<p><span>Nymex/ICE Difference</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+									<p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+								</li>
+							</ul>
+						</div>
+						<div class="cntBox">
+							<div class="title title-h2">原油</div>
+                        	<ul>
+                            	<li>
+									<p><span>WTI原油期货价格</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>WTI原油期货价格</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="down"></i><em>up</em></p>
+								</li>
+								<li>
+									<p><span>Brent原油期货价格</span><em>$108.60/bbl</em></p>
+                                    <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                    <p><span>WTI原油期货价格</span><em>$108.60/bbl</em></p>
+									<p><span>比昨日</span><i class="down"></i><em>up</em></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+                
+                <div class="module">
+            		<div class="title title-h1">竞争性能源价格</div>
+                    <div class="cntBox">
+                        <div class="title title-h2">居民用</div>
+                        <ul>
+                            <li>
+                                <p><span>LNG/天然气</span><em>$108.60/bbl</em></p>
+                                <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+                                <p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+                            </li>
+                            <li>
+                                <p><span>LNG/天然气</span><em>$108.60/bbl</em></p>
+                                <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+                                <p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">工业用</div>
+                        <ul>
+                            <li>
+                                <p><span>石脑油/天然气</span><em>$108.60/bbl</em></p>
+                                <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+                                <p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+                            </li>
+                            <li>
+                                <p><span>COAL/天然气</span><em>$108.60/bbl</em></p>
+                                <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+                                <p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+                            </li>
+                        </ul>
+                        
+                        <div class="title title-h2">交通运输</div>
+                        <ul>
+                            <li>
+                                <p><span>汽油/CNG</span><em>$108.60/bbl</em></p>
+                                <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+                                <p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+                            </li>
+                            <li>
+                                <p><span>汽油/CNG</span><em>$108.60/bbl</em></p>
+                                <p><span>比昨日</span><i class="up"></i><em>up</em></p>
+                                <p><span>比上周同期</span><i class="down"></i><em>$0.23</em></p>
+                                <p><span>比去年同期</span><i class="up"></i><em>$11.59</em></p>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+            <!--center E-->
+       </div>
+    </div>
+</div>
+
+<div id="control">
+	<div class="section">
+        <div class="diyBtn">
+            <button></button>
+        </div>
+        <div class="navBtn">
+        	<button></button>
+        </div>
+    </div>
+</div>
+<!--content E-->
+
+<!--footer S-->
+<div id="footer">
+	<div class="footer-top">
+    	<div class="section">
+        	<ul class="first">
+            	<li>
+                	<h5>产品</h5>
+                    <h6>原油</h6>
+                    <p class="first">
+                    	<a>常规原油</a><a>非常规原油</a>
+					</p>
+                    
+                    <h6>天然气</h6>
+                    <p>
+                    	<a>管道天然气</a><a>液化天然气</a><a>压缩天然气</a><a>非常规天然气</a>
+					</p>
+                </li>
+                <li>
+                	<h6>石油产品</h6>
+                    <p>
+                    	<a>石脑油</a><a>石油燃料</a><a>溶剂油</a><a>润滑油</a><a>基础油</a><a>沥青</a><a>石油焦</a><a>燃料油</a><a>调和油</a>
+					</p>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                	<h5>产品</h5>
+                    <p>
+                    	<a>统计表格</a><a>分析和报告</a><a>市场动态</a><a>数据</a><a>新闻</a><a>自选组合</a>
+					</p>
+				</li>
+			</ul>
+            <div class="footer-tRight">
+            	<img src="images/eqcode.png" width="130" />
+                <p>版权声明 / 法律声明<br />Copyright & Reuse<br />联系我们</p>
+                <div class="footer-thirdParty">
+                	<a class="weibo"></a>
+                    <a class="wechat"></a>
+                    <a class="qq"></a>
+                </div>
+            </div>
+       	</div>
+    </div>
+    <div class="footer-bot"><div class="section">Copyright © China Energy Business 2013</div></div>
+</div>
+<!--footer E-->
+</body>
+</html>

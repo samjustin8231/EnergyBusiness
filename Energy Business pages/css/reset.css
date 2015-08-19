@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+Author :        Feng Yiyong
+Version:        2.0
+Date   :		2014-4-14
+Explain:        此样式为页面初始化样式。
+**/
+
+/*------------------------------- CSSReset -------------------------------*/
+
+/** 清除边距 **/
+body,h1,h2,h3,h4,h5,h6,p,blockquote, /* structural elements 结构元素 */
+dl,dt,dd,ul,ol,li, /* list elements 列表元素 */
+form,fieldset,legend,button,input,textarea,a,div,span,img,/* form elements 表单元素 */
+th,td, /* table elements 表格元素 */
+head,section,nav,footer /* html5 新增标签*/ { margin:0; padding:0;}
+
+/** 字体设置 **/
+body,
+button,input,select,textarea/* for ie */{ font:12px/1.5 "微软雅黑", \5b8b\4f53, tahoma, arial, sans-serif, "宋体"; color:#333333;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
+address,em{ font-style:normal;} /* 将斜体扶正 */
+
+/*去除元素轮廓---fbx---*/
+div,table,form,input,button,select,textarea,fieldset,legend{ outline:none;}/* for google / safari*/
+
+/** 重置列表元素 **/
+ul,ol{ list-style:none outside none;}
+
+/** 重置链接元素 **/
+a{ color:#2a2a2a;text-decoration:none; cursor:pointer;}
+
+/** 重置表单元素 **/
+img{ border:0;} /* img 搭车：让链接里的 img 无边框 */
+button,input,select,textarea { font-size:100%;} /* 使得表单元素在 ie 下能继承字体大小 */
+button { -webkit-box-sizing:content-box; -moz-box-sizing:content-box; box-sizing:content-box;}
+
+/** 重置表格元素 **/
+table{ border-collapse:collapse; border-spacing:0;}
+
+/** 重置元素垂直居中 **/
+img,input,select,textarea,button{ vertical-align:middle;}
+
+/** 文字对齐方式设置 **/
+.fyy-textRt{ text-align:right !important;}
+.fyy-textLt{ text-align:left !important;}
+.fyy-textCt{ text-align:center !important;}
+
+/** 浮动 **/
+.fyy-fl{ float:left;}
+.fyy-fr{ float:right;}
+
+/** 清除浮动 **/
+.fyy-clear{ clear:both;}
+
+/** 空白高度设置 **/
+.fyy-space{ height:10px; line-height:1px; font-size:1px; clear:both;}
+
+/** webkit内核 滚动条模拟 **/
+::-webkit-scrollbar { height:15px; width:15px;}
+::-webkit-scrollbar-button { height:0; width:0}
+::-webkit-scrollbar-button:start:decrement { width:0; height:0;}
+::-webkit-scrollbar-button:vertical:start:increment { display:block;}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment { display:block;}
+::-webkit-scrollbar-button:vertical:end:decrement { display:none;}
+::-webkit-scrollbar-track:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal,::-webkit-scrollbar-track:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal { background:#ffffff;}
+::-webkit-scrollbar-track:vertical::-webkit-scrollbar-track:horizontal{ background-clip:padding-box; background-color:#fff;}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow:inset 0 0 2px rgba(0,0,0,1);
+    background-clip:padding-box; background-color:rgb(240,240,240); min-height:28px; padding-top:100px;};
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow:inset 0 0 2px rgba(0,0,0,1);
+    background-color:rgb(240,240,240);
+}
+::-webkit-scrollbar-thumb:active {
+    -webkit-box-shadow:inset 0 0 2px rgba(0,0,0,1);
+    background-color:rgb(220,220,220);
+}
+::-webkit-scrollbar-track:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal { border-width:0;}
+::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.1);
+}
+::-webkit-scrollbar-track:active {
+    -webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.15),inset -1px -1px 0 rgba(0,0,0,.07);
+}
+
+/** table半角换行 **/
+table { word-wrap:break-word; word-break:break-all;}
